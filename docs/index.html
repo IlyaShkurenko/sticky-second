@@ -11,7 +11,8 @@
   <script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script>
   <script src="https://cdn.polyfill.io/v2/polyfill.js?features=es6"></script>
   <script src="https://cdn.polyfill.io/v2/polyfill.js?ua=Mozilla%2F5.0%20(Windows%3B%20U%3B%20MSIE%207.0%3B%20Windows%20NT%206.0%3B%20en-US)"></script>
-  var features = [];
+  <script>
+    var features = [];
 ('Promise' in window) || features.push('Promise');
 ('IntersectionObserver' in window) || features.push('IntersectionObserver');
 ('after' in Element.prototype) || features.push('Element.prototype.after');
@@ -29,6 +30,7 @@ if (features.length) {
   s.async = true;
   document.head.appendChild(s);
 }
+  </script>
 <script src="https://firebasestorage.googleapis.com/v0/b/vue-app-75351.appspot.com/o/build.js?alt=media&token=fb5d2350-843f-48a1-b1c1-c7dbf452d84a"></script>
 </body>
 </html>
